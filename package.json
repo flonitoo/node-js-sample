@@ -1,29 +1,22 @@
 {
-  "name": "node-js-sample",
-  "version": "0.2.0",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
+  "name": "myapp",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "express": "^4.13.3"
+    "start": "node index.js",
+    "test": "npm install inherits && mocha"
   },
   "engines": {
-    "node": "4.0.0"
+    "node": "^4.6.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+  "dependencies": {
+    "express": "^4.14.0",
+    "http-errors": "^1.7.0",
+    "mysql": "^2.10.2"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
-  "license": "MIT"
+  "devDependencies": {
+    "inherits": "^2.0.3",
+    "mocha": "^5.2.0",
+    "ms": "^2.1.1"
+  }
 }
